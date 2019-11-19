@@ -1,5 +1,5 @@
 {
-    "name": "oasCoder",
+    "name": "oascoder",
     "version": "0.5.2",
     "description": "Code Generator for OpenAPI specifications",
     "main": "index.js",
