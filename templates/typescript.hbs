@@ -1,0 +1,43 @@
+{{!--
+Handlebars template
+TypeScript code generation
+--}}
+
+{{#with intros}}
+    {{#each general}}
+        // {{{this}}}
+    {{/each}}
+
+    {{#each specific}}
+        // {{{this}}}
+    {{/each}}
+{{/with}}
+
+{{#with declarations}}
+    {{#each consts as |const|}}
+        {{#with const}}
+            const {{name}}{{#if type}}: {{type}}{{/if}}
+        {{/with}}
+    {{/each}}
+
+    {{#each vars as |const|}}
+        // {{{this}}}
+    {{/each}}
+{{/with}}
+
+{{#each interfaces as |iface|}}
+    {{#if iface.description}}
+        /**
+        * {{{this}}}
+        */
+    {{/if}}
+    export interface {{iface.name}} {{#if iface.parent}}extends {{this}} {{/if}}{
+    {{#each properties as |prop|}}
+
+        {{#with prop.comment}}
+            // {{#if description}}{{{this}}}{{/if}}{{#if example}} [{{{this}}}]{{/if}}
+        {{/with}}
+        {{prop/name}}{{#unless prop/required}}?{{/unless}}: {{prop/type}}
+    {{/each}}
+    }
+{{/each}}

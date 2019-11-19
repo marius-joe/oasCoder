@@ -1,0 +1,24 @@
+{{!--
+Handlebars template
+TypeScript code generation
+--}}
+
+{{#with intros}}
+    {{#each general}}
+        // {{{this}}}
+    {{/each}}
+
+    {{#each specific}}
+        // {{{this}}}
+    {{/each}}
+{{/with}}
+
+{{#with declarations}}
+    {{#each consts}}
+        // {{{this}}}
+    {{/each}}
+
+    {{#each vars}}
+        // {{{this}}}
+    {{/each}}
+{{/with}}

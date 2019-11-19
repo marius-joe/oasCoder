@@ -1,0 +1,16 @@
+{
+    "name": "oasCoder",
+    "version": "0.5.2",
+    "description": "Code Generator for OpenAPI specifications",
+    "main": "index.js",
+    "scripts": {
+        "compile": "rm -rf dist && tsc",
+        "start": "node ./dist/index.js"
+    },
+    "author": "marius-joe",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^12.7.5",
+        "handlebars": "^4.4.0"
+    }
+}

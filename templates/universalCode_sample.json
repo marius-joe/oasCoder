@@ -1,0 +1,32 @@
+{
+    "intros": {
+        "general": [
+            "general comments intro"
+        ]
+    },
+    "declarations": {
+        "consts": [
+            {
+                "name": "coolConst",
+                "type": "string",
+                "value": "123"
+            }
+        ]
+    },
+    "interfaces": [
+        {
+            "name": "1stes Interface",
+            "description": "tolles Interface",
+            "parent": "parent",
+            "properties": [
+                {
+                    "prop1": "prop1type"
+                }
+            ]
+        },
+        {
+            "name": "2tes Interface"
+        }
+    ],
+    "functions": []
+}
