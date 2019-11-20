@@ -15,8 +15,8 @@
     },
     "interfaces": [
         {
-            "name": "1stes Interface",
-            "description": "tolles Interface",
+            "name": "1st Interface",
+            "description": "good Interface",
             "parent": "parent",
             "properties": [
                 {
@@ -25,7 +25,7 @@
             ]
         },
         {
-            "name": "2tes Interface"
+            "name": "2nd Interface"
         }
     ],
     "functions": []

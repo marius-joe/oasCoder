@@ -2,7 +2,7 @@
 //  Dev:  marius-joe
 // ******************************************
 //  OpenAPI Code Generator
-//  v0.6.5
+//  v0.5.3
 // ******************************************
 
 // Under Construction
@@ -160,7 +160,7 @@ const HandleBarsTemplateTypescript = ""
 
 /**
  * Code Generator for OpenAPI specifications.
- * v0.5.2
+ * v0.5.3
  * Supported: Swagger / OpenAPI v2.0
  * Separate complex logik from look -> generate a universal code description from the OAS
  * The universal code representation can later be rendered via HandleBars templates into a specific programming language
